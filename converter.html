@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="soSic's Sensitivity Converter">
+        <meta property="og:description" content="Convert your sensitivites between all of your favourite games and DPI values!">
+        <!-- <meta property="og:site_name" content="converter"> -->
+        <meta property="og:image" content="https://austinolig.github.io/images/icon_sosic_bg.jpg">
+        <meta property="og:url" content="https://austinolig.github.io/converter.html">
+        <meta name="theme-color" content="#ff4655">
+        <link rel="apple-touch-icon" href="images/icon_sosic_bg.jpg">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+		<link rel="stylesheet" href="css/helpers.css"/>
+        <link rel="icon" type="image/png" href="images/icon_sosic.png">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script defer src="js/converter.js"></script>
+        <title>Sensitivity Converter</title>
+    </head>
+    <body class="site-body">
+        <section class="section site-content">
+            <div class="container">
+                <div class="columns is-centered is-vcentered has-text-centered">
+                    <div class="column is-narrow">
+                        <figure class="image container is-128x128">
+                            <a href="https://www.youtube.com/channel/UCTDfHtIt9AE5_v5i4DHzkQg"><img class="is-rounded" src="images/icon_sosic_bg.jpg"></a>
+                        </figure>
+                    </div>
+                    <div class="column is-narrow">
+                        <h1 class="title">Sensitivity Converter</h1>
+                        <p class="subtitle">by soSic</p>
+                    </div>
+                </div>
+                
+                <!-- <div class="notification is-warning">
+                    <br>
+                    <div class="flex-notification">
+                        <div class="notification-date">
+                            <p>
+                                <strong><i>July 30th, 2020</i></strong>
+                            </p>
+                        </div>
+                        <div class="notification-text">
+                            - Added option to convert sensitivities to other DPI values.
+                            <br>
+                            - Added support to convert from/to Hyper Scape sensitivites.
+                        </div>
+                    </div>
+                </div> -->
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-narrow">
+                        <label class="label">GAME</label>
+                        <div class="control center">
+                            <div class="select">
+                                <select id="game-options" class="resize">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-narrow">
+                        <div>
+                            <div class="field">
+                                <label class="label">SENSITIVITY</label>
+                                <div class="control center">
+                                    <input id="sens-input" class="input resize" type="number" step=".1" placeholder="0.00" min="0.00">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-narrow">
+                        <div>
+                            <div class="field">
+                                <label class="label">CURRENT DPI</label>
+                                <div class="control center">
+                                    <input id="dpi-input" class="input resize" type="number" step="50" value="800" min="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-narrow">
+                        <div>
+                            <div class="field">
+                                <label class="label">NEW DPI</label>
+                                <div class="control center">
+                                    <input id="dpi-output" class="input resize" type="number" step="50" placeholder="Optional" min="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-narrow">
+                        <div>
+                            <div class="field">
+                                <label class="label">DECIMAL PRECISION</label>
+                                <div class="control center">
+                                    <input id="decimal-precision" class="input resize" type="number" value="4" min="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="columns is-centered">
+                    <div class="column is-narrow">
+                        <div class="table-container">
+                            <table id="sens-output" class="table is-hoverable">
+                                <thead>
+                                    <tr id="table-headers"></tr>
+                                </thead>
+                                <tbody>
+                                    <tr id="table-cells"></tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr id="table-cells-custom-header"></tr>
+                                    <tr id="table-cells-custom"></tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section site-footer">
+            <div class="content has-text-right">
+                <p>Copyright &copy; 2021 Austin Oligario.</p>
+            </div>
+        </section>
+    </body>
+</html>

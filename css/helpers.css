@@ -1,0 +1,53 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resize {
+    width: 14em;
+}
+
+th, td {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+hr {
+    background: #EEE;
+}
+
+#table-headers, #table-cells-custom-header {
+    background: #EEE
+}
+
+.table-container {
+    border: 1px solid #EEE;
+    border-radius:4px;
+}
+
+.flex-notification {
+    display: flex;
+}
+
+.notification-text {
+    padding-left: 15px;
+}
+
+html {
+    overflow-y: auto;
+}
+
+.site-body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.site-content { 
+    flex: 1;
+}
+
+.site-footer { 
+    background: #ffab62;
+}
